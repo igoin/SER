@@ -12,6 +12,9 @@
 		BCA605741EF2CE3200EA7AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA605721EF2CE3200EA7AD1 /* Main.storyboard */; };
 		BCA605761EF2CE3200EA7AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA605751EF2CE3200EA7AD1 /* Assets.xcassets */; };
 		BCA605791EF2CE3200EA7AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA605771EF2CE3200EA7AD1 /* LaunchScreen.storyboard */; };
+		BCA605811EF2CE6700EA7AD1 /* Filelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA605801EF2CE6700EA7AD1 /* Filelist.swift */; };
+		BCA605831EF2CE8000EA7AD1 /* FilelistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA605821EF2CE8000EA7AD1 /* FilelistItem.swift */; };
+		BCA605851EF2CEA000EA7AD1 /* serViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA605841EF2CEA000EA7AD1 /* serViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BCA605751EF2CE3200EA7AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA605781EF2CE3200EA7AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCA6057A1EF2CE3200EA7AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA605801EF2CE6700EA7AD1 /* Filelist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filelist.swift; sourceTree = "<group>"; };
+		BCA605821EF2CE8000EA7AD1 /* FilelistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilelistItem.swift; sourceTree = "<group>"; };
+		BCA605841EF2CEA000EA7AD1 /* serViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,10 @@
 			children = (
 				BCA6056E1EF2CE3200EA7AD1 /* AppDelegate.swift */,
 				BCA605701EF2CE3200EA7AD1 /* ViewController.swift */,
+				BCA605801EF2CE6700EA7AD1 /* Filelist.swift */,
+				BCA605821EF2CE8000EA7AD1 /* FilelistItem.swift */,
 				BCA605721EF2CE3200EA7AD1 /* Main.storyboard */,
+				BCA605841EF2CEA000EA7AD1 /* serViewController.swift */,
 				BCA605751EF2CE3200EA7AD1 /* Assets.xcassets */,
 				BCA605771EF2CE3200EA7AD1 /* LaunchScreen.storyboard */,
 				BCA6057A1EF2CE3200EA7AD1 /* Info.plist */,
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA605831EF2CE8000EA7AD1 /* FilelistItem.swift in Sources */,
+				BCA605851EF2CEA000EA7AD1 /* serViewController.swift in Sources */,
 				BCA605711EF2CE3200EA7AD1 /* ViewController.swift in Sources */,
+				BCA605811EF2CE6700EA7AD1 /* Filelist.swift in Sources */,
 				BCA6056F1EF2CE3200EA7AD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +273,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3Y3Z2Z567H;
 				INFOPLIST_FILE = SER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ldk.SER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +288,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3Y3Z2Z567H;
 				INFOPLIST_FILE = SER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ldk.SER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
