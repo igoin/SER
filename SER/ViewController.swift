@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-//import Alamofire
+import Alamofire
 
 class ViewController: UIViewController,AVAudioPlayerDelegate,AVAudioRecorderDelegate {
     
@@ -155,7 +155,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,AVAudioRecorderDele
     func upload() {
         
         // get the date time String from the date object
-        /*var audioFilename = getDocumentsDirectory().appendingPathComponent(ViewController.shared.result)
+        var audioFilename = getDocumentsDirectory().appendingPathComponent(ViewController.shared.result)
         Alamofire.request("http://163.239.169.54:5005/uploads").responseString { response in
             print(response.request as Any)  // original URL request
             print(response.response as Any) // HTTP URL response
@@ -212,7 +212,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,AVAudioRecorderDele
                     print(encodingError)
                 }
         }
-        )*/
+        )
         
         
         
